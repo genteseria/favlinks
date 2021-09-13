@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/styles.css">
+
+<div class="container p-4 subheader">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card" style="margin-top: 20vh;">
+                <div class="card-body">
+                    <form action="/links/add" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="titulo" placeholder="Título" maxlength="200" autofocus>
+                        </div><br>
+                        <div class="form-group">
+                            <input type="url" class="form-control" name="url" placeholder="URL" maxlength="1000">
+                        </div><br>
+                        <div class="form-group">
+                            <textarea name="descripcion" rows="2" class="form-control" placeholder="Descripción" maxlength="800"></textarea>
+                        </div><br>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">Añadir link</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

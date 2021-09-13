@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/styles.css">
+
+<div class="container p-4 subheader">
+    <div class="row">
+
+        {{#each links}}
+            <div class="col-md-3">
+                <div class="card text-center" style="margin-top: 20vh;">
+                    <div class="card-body">
+                        <a href="{{url}}" target="_blank" rel="noopener noreferrer">
+                            <h3 class="card-title">{{titulo}}</h3>
+                        </a>
+                        <p class="m-2">{{descripcion}}</p>
+                        <strong><p class="m-2">{{timeago creado}}</p></strong>
+                        <a href="/links/delete/{{id}}" class="btn btn-danger">Eliminar</a>
+                        <a href="/links/edit/{{id}}" class="btn btn-warning">Editar</a>
+                    </div>
+                </div>
+            </div>
+        {{else}}
+            <div class="col-md-4 mx-auto">
+                <div class="card card-body text-center" style="margin-top: 20vh;">
+                    <p>No tienes links guardados aún.</p>
+                    <a href="/links/add" class="btn btn-primary">Guarda uno ;)</a>
+                </div>
+            </div>
+        {{/each}}
+
+    </div>
+</div>
