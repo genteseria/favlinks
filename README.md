@@ -16,10 +16,11 @@ Un lugar self-hosted para links y marcadores, con la finalidad de que estén dis
 - `npm run dev`
 
 # TODO
-- Mejorar la seguridad (bastante xD).
-- Añadir cifrado de extremo a extremo (guardar links cifrados en la DB).
+- Implementar medidas básicas de seguridad (xD).
+- Guardar links cifrados en la DB.
 - Añadir métodos de recuperación de contraseña y captcha en el signup.
-- Añadir buscador y organizadoción por grupos/carpetas.
+- Añadir medidas anti-CSRF en los formularios.
+- Añadir buscador y organización por grupos/carpetas.
 - Añadir opción para exportar.
 
 Pull requests e issues bienvenidos.
